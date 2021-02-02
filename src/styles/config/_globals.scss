@@ -1,0 +1,53 @@
+*,
+*::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: $primary-family;
+  background: $bg-primary;
+}
+
+//custom btn
+.customBtn {
+  margin-top: 1rem;
+  z-index: $heroBtn-index;
+  padding: 0.6rem 1.4rem;
+  color: $text-primary;
+  border: none;
+  outline: none;
+  background: $bg-gradient1;
+  font-weight: $fw-bold;
+  text-transform: capitalize;
+  background-size: 300%;
+  background-position: left;
+  transition: background-position 0.7s ease-in-out;
+
+  &:hover {
+    background-position: right;
+  }
+}
+
+//custom title
+.main-title {
+  font-size: 2rem;
+  font-weight: $fw-bold;
+  color: $text-primary;
+  position: relative;
+  margin-bottom: 2rem !important;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0%;
+    width: 60px;
+    background: $primary-color;
+    height: 8px;
+  }
+}

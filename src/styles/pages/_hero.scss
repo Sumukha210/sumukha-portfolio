@@ -1,0 +1,52 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: $bg-secondary;
+
+  .hero__particle {
+    position: absolute;
+    top: 0%;
+    height: 100vh;
+    width: 100%;
+    z-index: $particle-index;
+  }
+
+  .hero__content {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    @include flex(column, center);
+    text-align: center;
+  }
+
+  &__intro {
+    color: $text-primary;
+    letter-spacing: 1px;
+    font-weight: $fw-normal;
+
+    @include breakpoint-up(md) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__title {
+    color: $text-primary;
+    margin: 0.5rem 0;
+    font-weight: $fw-bold !important;
+    text-transform: capitalize;
+
+    span {
+      color: $secondary-color;
+
+      @include breakpoint-down(sm) {
+        font-size: 2.3rem;
+        display: block;
+      }
+    }
+
+    @include breakpoint-up(md) {
+      font-size: 3.4rem;
+    }
+  }
+}

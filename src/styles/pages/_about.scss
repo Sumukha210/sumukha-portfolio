@@ -1,0 +1,32 @@
+.about {
+  position: relative;
+  @include container;
+  height: 100vh;
+
+  &__container {
+    height: 100%;
+  }
+
+  &__content {
+    p {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      font-weight: $fw-normal !important;
+      color: darken($text-primary, 10%);
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+
+  .btn__container {
+    margin-top: 1rem;
+    .btn {
+      margin-right: 2rem;
+    }
+    button:last-child {
+      background-image: linear-gradient(to right, $secondary-color, #f321d7);
+    }
+  }
+}

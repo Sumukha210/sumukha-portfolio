@@ -1,0 +1,55 @@
+.project {
+  @include container;
+  height: 100vh;
+
+  &__container {
+    height: 100%;
+  }
+
+  .main-title {
+    &::after {
+      bottom: -1rem;
+      width: 80px;
+    }
+  }
+
+  @include breakpoint-down(md) {
+    margin-top: 8rem !important;
+  }
+
+  @include breakpoint-down(sm) {
+    margin-top: 34rem !important;
+  }
+
+  .card {
+    background-color: $bg-secondary;
+    color: $text-primary;
+    border: none !important;
+    outline: none !important;
+
+    &-title {
+      text-transform: capitalize;
+      font-weight: $fw-bold;
+    }
+    &-text {
+      font-weight: $fw-normal;
+      color: darken($text-primary, 20%);
+    }
+
+    .btn {
+      padding: 0.6rem 1rem;
+
+      .btnText {
+        font-size: 0.9rem;
+      }
+
+      &:nth-child(1) {
+        background-image: $bg-gradient4;
+      }
+
+      &:nth-child(2) {
+        background-image: $bg-gradient3;
+      }
+    }
+  }
+}

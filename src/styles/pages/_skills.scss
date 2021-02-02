@@ -1,0 +1,55 @@
+.skills {
+  @include container;
+  height: 100vh;
+
+  &__container {
+    max-height: 100%;
+  }
+
+  @include breakpoint-down(md) {
+    margin-top: 5rem !important;
+  }
+
+  @include breakpoint-down(sm) {
+    margin-top: 8rem !important;
+  }
+
+  .card {
+    height: 350px;
+    text-transform: capitalize;
+    box-shadow: 0 0px 10px silver !important;
+    border-radius: 12px;
+    color: $text-primary !important;
+    border: none !important;
+    outline: none !important;
+    transition: all 0.7s ease-in;
+
+    &-title {
+      font-weight: $fw-bold;
+      font-size: 1.4rem;
+    }
+
+    &-text {
+      font-weight: $fw-normal;
+      font-size: 1.1rem !important;
+      padding-bottom: 0.5rem;
+    }
+
+    &:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 15px silver !important;
+    }
+  }
+
+  .col-md-4:nth-child(2) .card {
+    background: $bg-gradient2;
+  }
+
+  .col-md-4:nth-child(1) .card {
+    background: $bg-gradient3;
+  }
+
+  .col-md-4:nth-child(3) .card {
+    background: $bg-gradient4;
+  }
+}

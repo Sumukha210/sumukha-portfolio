@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "sumukha.k.b-portfolio",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "my portfolio",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -14,11 +14,23 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "gatsby": "^2.26.1",
+    "bootstrap": "^4.6.0",
+    "gatsby": "^2.31.1",
+    "gatsby-image": "^2.10.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-sass": "^3.1.0",
+    "gatsby-plugin-sharp": "^2.13.4",
+    "gatsby-source-filesystem": "^2.10.0",
+    "gatsby-transformer-sharp": "^2.11.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-bootstrap": "^1.4.3",
+    "react-dom": "^16.12.0",
+    "react-icons": "^4.1.0",
+    "react-particles-js": "^3.4.1",
+    "sass": "^1.32.5"
   },
   "devDependencies": {
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.20",
     "prettier": "2.2.1"
   },
   "repository": {
