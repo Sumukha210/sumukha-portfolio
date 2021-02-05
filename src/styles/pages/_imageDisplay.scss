@@ -1,4 +1,7 @@
 .imageDisplay {
   @include container;
   margin-top: 2rem;
+  .PdfBtn {
+    background: $primary-color;
+  }
 }
