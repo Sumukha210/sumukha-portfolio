@@ -13,26 +13,29 @@ const Project = () => {
 
   return (
     <div className="project">
-      <Row className="project__container align-items-center justify-content-center">
+      <Row
+        className="project__container align-items-center justify-content-center"
+        id="project"
+      >
         <Col>
           <h1 className="main-title">Projects</h1>
           <Row className="align-items-center mt-5">
             <CustomCard
-              img={nodes[0].childImageSharp.fluid}
+              img={nodes[2].childImageSharp.fluid}
               title={ekart.title}
               content={ekart.content}
               liveDemoUrl={ekart.liveDemoUrl}
               codeUrl={ekart.codeUrl}
             />
             <CustomCard
-              img={nodes[1].childImageSharp.fluid}
+              img={nodes[0].childImageSharp.fluid}
               title={videoder.title}
               content={videoder.content}
               liveDemoUrl={videoder.liveDemoUrl}
               codeUrl={videoder.codeUrl}
             />
             <CustomCard
-              img={nodes[2].childImageSharp.fluid}
+              img={nodes[1].childImageSharp.fluid}
               title={countries.title}
               content={countries.content}
               liveDemoUrl={countries.liveDemoUrl}
@@ -72,7 +75,7 @@ const imageQuery = graphql`
 const ekart = {
   title: "E-kart",
   content: "A Fullstack e-commerce website",
-  liveDemoUrl: "https://www.flipkart.com/",
+  liveDemoUrl: "https://e-kart.netlify.app/",
   codeUrl: "https://github.com/Sumukha210/E-kart-website",
 }
 

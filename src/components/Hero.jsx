@@ -1,10 +1,11 @@
 import React from "react"
 import Particles from "react-particles-js"
 import particlesConfig from "./common/particleConfig"
+import { animateScroll } from "react-scroll"
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <Particles className="hero__particle" params={particlesConfig} />
 
       <div className="hero__content">
@@ -15,7 +16,7 @@ const Hero = () => {
 
         <button
           className="customBtn hero__btn"
-          onClick={() => console.log("hello")}
+          onClick={() => animateScroll.scrollToBottom()}
         >
           contact me
         </button>

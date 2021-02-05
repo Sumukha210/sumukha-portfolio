@@ -4,6 +4,7 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Button from "react-bootstrap/Button"
+import { animateScroll } from "react-scroll"
 
 const About = () => {
   const {
@@ -13,7 +14,7 @@ const About = () => {
   } = useStaticQuery(imageQuery)
 
   return (
-    <div className="about mt-5">
+    <div className="about mt-5" id="about">
       <Row className="about__container justify-content-between align-items-center">
         <Col lg={6} md={7} sm={12}>
           <div className="about__content">
@@ -31,7 +32,12 @@ const About = () => {
               <Button as={Link} to="/ImageDisplay" className="customBtn mr-3">
                 Resume
               </Button>
-              <Button className="customBtn">Hire Me</Button>
+              <Button
+                onClick={() => animateScroll.scrollToBottom()}
+                className="customBtn"
+              >
+                Hire Me
+              </Button>
             </div>
           </div>
         </Col>

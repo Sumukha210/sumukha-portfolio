@@ -5,7 +5,7 @@ import SkillsCard from "./SkillsCard"
 
 const Skills = () => {
   return (
-    <div className="skills mt-5">
+    <div className="skills mt-5" id="skills">
       <Row className="skills__container align-items-center">
         <Col md={12} className="align-items-center">
           <h1 className="main-title">Skills</h1>

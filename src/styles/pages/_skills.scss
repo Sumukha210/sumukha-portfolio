@@ -1,18 +1,5 @@
 .skills {
   @include container;
-  height: 100vh;
-
-  &__container {
-    max-height: 100%;
-  }
-
-  @include breakpoint-down(md) {
-    margin-top: 5rem !important;
-  }
-
-  @include breakpoint-down(sm) {
-    margin-top: 8rem !important;
-  }
 
   .card {
     height: 350px;

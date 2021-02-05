@@ -1,0 +1,70 @@
+.contact {
+  margin-top: 8rem;
+
+  .info__group {
+    .heading {
+      font-size: 1.2rem;
+      font-weight: $fw-bold;
+      color: $text-primary;
+    }
+    .info {
+      color: darken($text-primary, 25%);
+      font-weight: $fw-normal !important;
+    }
+  }
+
+  .main-title {
+    text-transform: uppercase;
+    &::after {
+      bottom: -1rem;
+      width: 80px;
+      right: 0;
+      margin: auto;
+    }
+
+    @include breakpoint-up(sm) {
+      font-size: 3rem;
+      &::after {
+        width: 200px;
+      }
+    }
+  }
+
+  &__container {
+    @include container;
+    margin-top: 5rem !important;
+  }
+
+  .form-control {
+    height: 50px;
+    background-color: $bg-secondary;
+    border: none !important;
+    outline: none !important;
+    color: darken($text-primary, 10%);
+
+    &::placeholder {
+      color: darken($text-primary, 30%);
+    }
+
+    &:focus {
+      border-color: $secondary-color;
+      box-shadow: 0px 0px 5px $secondary-color;
+    }
+  }
+
+  textarea {
+    height: 200px !important;
+  }
+
+  button {
+    &:nth-child(2) {
+      background-image: $bg-gradient4;
+    }
+  }
+
+  @include breakpoint-down(lg) {
+    .contact-form {
+      margin: 3rem 0;
+    }
+  }
+}

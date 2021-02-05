@@ -1,0 +1,66 @@
+.footer {
+  position: relative;
+  min-height: 15vh;
+  background-color: $bg-secondary;
+  width: 100%;
+  margin-top: 4rem;
+
+  &__title {
+    padding-top: 15px;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+  }
+
+  &__container {
+    @include flex(column, center);
+  }
+
+  .linkIcon {
+    background: transparent;
+    border-radius: 50%;
+    border-color: $primary-color !important;
+    transition: background 0.3s ease-in;
+
+    &:hover {
+      background: $primary-color;
+    }
+  }
+
+  .toTopBtn {
+    position: absolute;
+    right: 4%;
+    border-radius: 50%;
+    font-weight: $fw-bold !important;
+    font-size: 1.2rem;
+    background: $bg-gradient3;
+    border: none !important;
+    outline: none !important;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 0.7s ease-in-out;
+
+    &:focus {
+      box-shadow: none !important;
+      border: none;
+    }
+
+    &:hover {
+      background-position: right;
+    }
+
+    @keyframes bounce {
+      from {
+        bottom: 20%;
+      }
+      to {
+        bottom: 10%;
+      }
+    }
+  }
+}
