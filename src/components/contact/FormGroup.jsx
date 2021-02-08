@@ -23,7 +23,7 @@ const FormGroup = () => {
     setBtnDisabled(true)
     try {
       const { data } = await axios.post(
-        "https://sumukha-portfolio.herokuapp.com/",
+        "https://sumukha-portfolio.herokuapp.com/sendEmail",
         userData
       )
       setShowAlert(true)
