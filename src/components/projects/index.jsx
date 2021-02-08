@@ -9,8 +9,6 @@ const Project = () => {
     allFile: { nodes },
   } = useStaticQuery(imageQuery)
 
-  console.log(nodes[0].childImageSharp.fluid)
-
   return (
     <div className="project">
       <Row

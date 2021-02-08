@@ -1,10 +1,10 @@
 import React from "react"
 import About from "../components/About"
-import Contact from "../components/Contact"
+import Contact from "../components/contact"
 import Hero from "../components/Hero"
-import Project from "../components/projects/Project"
-import Skills from "../components/skills/Skills"
-import Layout from "../Layout/Layout"
+import Project from "../components/projects"
+import Skills from "../components/skills"
+import Layout from "../Layout"
 
 const index = () => {
   return (

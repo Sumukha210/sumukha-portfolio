@@ -1,6 +1,32 @@
 .contact {
   margin-top: 8rem;
 
+  .alertMsg {
+    color: $text-primary !important;
+    text-align: center;
+    text-transform: uppercase;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(+300vw);
+    transition: all 2s ease-in;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    &.showAlert {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(0vw);
+    }
+
+    &.green {
+      background-color: green;
+    }
+
+    &.red {
+      background-color: #f31818e3;
+    }
+  }
+
   .info__group {
     .heading {
       font-size: 1.2rem;
@@ -49,6 +75,7 @@
     &:focus {
       border-color: $secondary-color;
       box-shadow: 0px 0px 5px $secondary-color;
+      background-color: $bg-secondary !important;
     }
   }
 
