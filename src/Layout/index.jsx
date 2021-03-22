@@ -3,14 +3,18 @@ import Navbar from "../components/common/Navbar"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/style.scss"
 import Footer from "../components/Footer"
+import SEO from "../components/SEO"
 
 const Layout = ({ children }) => {
   return (
-    <div className="app">
-      <Navbar />
-      {children}
-      <Footer />
-    </div>
+    <>
+      <SEO />
+      <div className="app">
+        <Navbar />
+        {children}
+        <Footer />
+      </div>
+    </>
   )
 }
 
