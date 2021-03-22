@@ -12,7 +12,8 @@ module.exports = {
     description:
       "This is Sumukha kb's personal Portfolio,it contains all the necessary information about himself.",
     url: "http://Sumukhakb210.com", // No trailing slash allowed!
-    image: "/main-img.png", // Path to your image you placed in the 'static' folder
+    image:
+      "https://raw.githubusercontent.com/Sumukha210/sumukha-portfolio/main/static/main-img.png", // Path to your image you placed in the 'static' folder
     twitterUsername: "@sumukha210",
   },
   plugins: [
