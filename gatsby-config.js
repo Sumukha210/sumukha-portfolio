@@ -6,6 +6,15 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Sumukha Portfolio",
+    titleTemplate: "%s · Sumukha kb Portfolio",
+    description:
+      "This is Sumukha kb's personal Portfolio,it contains all the necessary information about himself.",
+    url: "http://Sumukhakb210.com", // No trailing slash allowed!
+    image: "/main-img.png", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@sumukha210",
+  },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
