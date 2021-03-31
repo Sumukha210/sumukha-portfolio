@@ -29,14 +29,17 @@ const technicalSkills = [
   "Node",
   "react",
   "gatsby",
+  "next js",
 ]
 const otherSkills = [
   "material Ui",
   "Bootstrap",
   "MongoDb",
+  "MySql",
   "Redux",
   "sass",
   "Express",
+  "typescript",
 ]
 
 const Tools = ["Vs Code", "git", "git bash", "figma"]
