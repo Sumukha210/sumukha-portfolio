@@ -7,10 +7,10 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Sumukha Portfolio",
+    title: "Hello there,sumukha here,checkout my portfolio",
     titleTemplate: "%s · Sumukha kb Portfolio",
     description:
-      "This is Sumukha kb's personal Portfolio,it contains all the necessary information about himself.",
+      "This is my personal Portfolio,it contains all the basic information's about me. It also contains the project that i built.",
     url: "http://Sumukhakb210.com", // No trailing slash allowed!
     image:
       "https://raw.githubusercontent.com/Sumukha210/sumukha-portfolio/main/static/main-img.png", // Path to your image you placed in the 'static' folder
